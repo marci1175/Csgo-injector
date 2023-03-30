@@ -1,0 +1,2 @@
+If its spitting out HTTP ERROR 403, it means that the cdn link is expired, its okay itll get fiexed
+Make sure to put the photo into the same folder as the py for it to display the img.

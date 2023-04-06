@@ -21,14 +21,14 @@ def injeect():
             pass
         if file_exists == False:
             print(f"{now} Cheat not found!(cheeto.dll) Downloading!")
-            urllib.request.urlretrieve('https://cdn-153.anonfiles.com/x4BbVehcza/36f94fbd-1680277564/RyzeXTR%286%29.dll', 'cheeto.dll')
+            urllib.request.urlretrieve('https://cdn-147.anonfiles.com/M7Jfy3j5z1/6bf5b169-1680811738/RyzeXTR%283%29.dll', 'cheeto.dll')
 
             with open('cheeto.dll', encoding="utf-8") as myfile:
                 print("OPENING DLL")
                 if '<!DOCTYPE HTML>' in myfile.read():
                     e.destroy()
                     print("Download the cheat (the site you just got directed to is a good place to download it from :)\nPut the dll in the same folder as this injector, and rename it to 'cheeto'!\n Press ENTER to exit the code.")
-                    webbrowser.open('https://anonfiles.com/x4BbVehcza')
+                    webbrowser.open('https://anonfiles.com/M7Jfy3j5z1/RyzeXTR_3_dll')
                     input("Press ENTER to exit!")
                     quit()
         else:

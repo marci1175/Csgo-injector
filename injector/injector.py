@@ -57,7 +57,7 @@ def injeect():
 
 #pid = csgo pid
 #usrname check, exit if name exists, checked by pass
-login = ['Bálint','Sára','András','Marci']
+login = ['123']
 access = False
 def check():
     global usrn

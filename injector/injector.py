@@ -19,12 +19,15 @@ def injeect():
         except FileNotFoundError:
             print("FILENOTFOUND PASSED")
             pass
+        #check if cheat is on the computer, if no:
         if file_exists == False:
             print(f"{now} Cheat not found!(cheeto.dll) Downloading!")
+        #goto this url, download the dll and name it "cheeto"
             urllib.request.urlretrieve('https://cdn-147.anonfiles.com/M7Jfy3j5z1/6bf5b169-1680811738/RyzeXTR%283%29.dll', 'cheeto.dll')
 
             with open('cheeto.dll', encoding="utf-8") as myfile:
                 print("OPENING DLL")
+                #if dll is corrupted destroy the app and make directions on how to download the dll manually
                 if '<!DOCTYPE HTML>' in myfile.read():
                     e.destroy()
                     print("Download the cheat (the site you just got directed to is a good place to download it from :)\nPut the dll in the same folder as this injector, and rename it to 'cheeto'!\n Press ENTER to exit the code.")
@@ -109,6 +112,7 @@ if access == True:
     own = tk.Label(e, text="Owner, developer:")
     own.pack()
     try:
+                #owner photo
         img = ImageTk.PhotoImage(Image.open("CRDEPNG.png"))
         panel = tk.Label(e, image = img)
         panel.pack(side = "bottom", fill = "both", expand = "yes")
